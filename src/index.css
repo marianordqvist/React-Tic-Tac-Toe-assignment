@@ -1,12 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
+  background-color: rgb(192, 205, 192);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+.game-container {
+  display: inline-block;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 60px;
+  box-shadow: 8px 8px 8px rgb(59, 59, 59, 0.1);
+}
+
+.game-heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
 }
 
 .game {
   display: flex;
   justify-content: center;
+  gap: 2rem;
 }
 
 .board-row {
@@ -14,25 +40,42 @@ button {
 }
 
 button {
-  border: solid 1px rgb(95, 91, 91);
+  border: none;
   color: rgb(95, 91, 91);
   background-color: lightgrey;
   font-weight: 700;
   border-radius: 3px;
   text-align: left;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+button:hover {
+  background-color: rgb(232, 232, 232);
 }
 
 .square {
-  border: solid 1px rgb(122, 138, 95);
+  border: solid 1px rgb(130, 146, 104);
   color: rgb(67, 85, 36);
-  background-color: rgb(189, 201, 189);
+  background-color: rgb(192, 205, 192);
   width: 4rem;
   height: 4rem;
   font-size: large;
   text-align: center;
   font-size: 1.7rem;
+  margin-bottom: 0;
 }
 
-button:hover {
-  background-color: rgb(240, 251, 255);
+.square:hover {
+  background-color: rgb(215, 228, 215);
+}
+
+.history-list {
+  margin-top: 0;
+  padding-inline-start: 1rem;
+}
+
+.history-heading,
+.status-message {
+  margin-bottom: 0.6rem;
 }

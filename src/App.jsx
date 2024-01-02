@@ -4,7 +4,10 @@ import Game from "./components/Game";
 function App() {
   return (
     <>
-      <Game />
+      <div className="game-container">
+        <h1 className="game-heading">Tic-Tac-Toe</h1>
+        <Game />
+      </div>
     </>
   );
 }

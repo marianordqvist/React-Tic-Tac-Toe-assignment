@@ -38,6 +38,7 @@ function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
+        <div className="history-heading">Game history:</div>
         <ol className="history-list">{moves}</ol>
       </div>
     </div>
